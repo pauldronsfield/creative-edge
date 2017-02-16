@@ -1,0 +1,246 @@
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.input,
+.select {
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #EEEEEE;
+  border-radius: $borderRadius;
+}
+
+.input {
+  padding: 27px 50px 10px 15px;
+}
+
+.select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 18px 50px 18px 15px;
+  background: #FFFFFF url("../images/icons/chevron--down.svg") no-repeat right 15px center;
+}
+
+.input:focus,
+.alt-input:focus,
+.select:focus {
+  border-color: #CCCCCC;
+}
+
+
+/* Grouped fields
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.grouped-fields .input {
+  border: none;
+}
+
+.grouped-fields .input {
+  border: 1px solid #EEEEEE;
+  border-top: none;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.grouped-fields .input:focus {
+  border-color: #CCCCCC !important;
+  border-top: 1px solid #CCC;
+  margin-top: -1px;
+}
+
+.grouped-fields .field:nth-child(2) .input:focus {
+  margin-top: 0;
+}
+
+.grouped-fields .field:nth-child(2) .input {
+  border-top: 1px solid #EEEEEE;
+  border-radius: $borderRadius $borderRadius 0 0;
+}
+
+.grouped-fields .field:last-child .input {
+  border-radius: 0 0 $borderRadius $borderRadius;
+}
+
+
+
+
+.field__title {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #999999;
+  font-size: 1.2rem;
+}
+
+.field-invalid > .field__title {
+  color: #E1283C;
+}
+
+.field-invalid > input {
+  border-color: #E1283C;
+  background: #FFFFFF url("../images/icons/cancel-1--red.svg") no-repeat right 15px center;
+}
+
+.field-valid > .field__title {
+  color: #48E400;
+}
+
+.field-valid > input {
+  border-color: #48E400;
+  background: #FFFFFF url("../images/icons/correct--green.svg") no-repeat right 15px center;
+}
+
+.field-has-button::after {
+  content: "\5c";
+  font-family: "bp-icons";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  line-height: 1;
+  padding: 19px 0 0 0;
+  border: none;
+  cursor: pointer;
+  color: $radioactive;
+  background-color: #292929;
+  width: 66px;
+  border-top-right-radius: $borderRadius;
+  border-bottom-right-radius: $borderRadius;
+}
+
+.radio-item,
+.checkbox-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.radio-item:last-child,
+.checkbox-item:last-child {
+  margin-bottom: 0;
+}
+
+.radio-item input[type='radio'],
+.checkbox-item input[type='checkbox'] {
+  display: none;
+}
+
+.radio-item label,
+.checkbox-item label {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.radio-item label::before,
+.checkbox-item label::before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  top: 1px;
+  border: 1px solid #999999;
+  margin-right: 15px;
+}
+
+.radio-item label::before {
+  border-radius: 100%;
+}
+
+.checkbox-item label::before {
+  border-radius: 2px;
+}
+
+.radio-item input[type=radio]:checked + label::before,
+.checkbox-item input[type=checkbox]:checked + label::before {
+  border-color: #48E400;
+}
+
+.checkbox-item input[type=checkbox]:checked + label::before {
+  background-color: #48E400;
+}
+
+.radio-item input[type=radio]:checked + label::after,
+.checkbox-item input[type=checkbox]:checked + label::after {
+  content: " ";
+  display: block;
+  position: absolute;
+}
+
+.radio-item input[type=radio]:checked + label::after {
+  top: 6px; left: 3px;
+  width: 8px; height: 8px;
+  background: #48E400;
+  border-radius: 11px;
+}
+
+.checkbox-item input[type=checkbox]:checked + label::after {
+  top: 5px; left: 1px;
+  width: 12px; height: 12px;
+  border-radius: 11px;
+  background-image: url("../images/icons/tick--white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.alt-field__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #999999;
+  font-size: 1.2rem;
+}
+
+.alt-input {
+  padding: 20px 50px 7px 0;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: inherit;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .dropdown {
+//   line-height: 1;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

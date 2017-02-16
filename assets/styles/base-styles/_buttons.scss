@@ -1,0 +1,85 @@
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.btn {
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 16px 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.btn[disabled],
+.btn[disabled]:hover {
+  width: auto;
+  color: #999999;
+  background-color: #EEEEEE;
+  border: 1px dashed #999999;
+  cursor: auto;
+}
+
+.btn-primary {
+  @extend .btn;
+  color: #292929;
+  background-color: #48E400;
+  border-color: #48E400;
+}
+
+.btn-primary:hover:not(.active):not([disabled]) {
+  background-color: #72FF31;
+  border-color: #72FF31;
+}
+
+.btn-primary.active {
+  background-color: #36A304;
+  border-color: #36A304;
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: #FFFFFF;
+  border-color: #666C68;
+}
+
+.btn-secondary:hover:not(.active):not([disabled]) {
+  color: #fff;
+  background-color: #292929;
+}
+
+.btn-secondary.active {
+  color: #fff;
+  background-color: #292929;
+  border-color: #292929;
+}
+
+.btn-inverted {
+  @extend .btn;
+  color: #FFFFFF;
+  background-color: #292929;
+  border-color: #FFFFFF;
+}
+
+.btn-inverted:hover:not(.active):not([disabled]) {
+  color: #292929;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.btn-inverted.active {
+  color: #292929;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.btn--limit-width {
+  display: inline-block;
+  padding: 16px 70px;
+}

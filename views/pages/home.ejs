@@ -1,0 +1,80 @@
+<%
+const header = {
+  hasGradient: true
+
+}
+const heroImages = [
+  { image: 'royal_bank_of_canada_garden.jpg', },
+  { image: 'oasis.jpg', },
+  { image: 'vegetables.jpg', },
+  { image: 'pr_image.jpg', },
+  { image: 'hidden_beauty_of_kranji.jpg', },
+  { image: 'georgian_facade.jpg', }  
+]
+%>
+
+<div class="container home-page">
+  
+  <div class="row">
+    <div class="columns twelve">
+      
+      <%- partial('../components/header.ejs', { header }) %>
+
+    </div>
+  </div>
+
+  <div class="row u-margin-b">
+    <div class="columns twelve">
+      
+      <%- partial('../components/hero.ejs', { heroImages }) %>
+
+    </div>
+  </div>
+
+  <div class="row u-margin-b--lrg">
+    <div class="columns four offset-by-four six--lrg offset-by-three--lrg eight--med offset-by-two--med ten--sm offset-by-one--sm">
+
+      <article> 
+        <p>We provide commercial photography in Essex, Chelmsford, London and the Home Counties.</p>
+        <p>Established in 1998, the company has many years experience in the photographic business, supplying <a class="primary-link" href="/corporate">corporate</a>, <a class="primary-link" href="/corporate">editorial</a>, <a class="primary-link" href="/corporate">press</a> and <a class="primary-link" href="/corporate">public relations</a> photography to the public and private sectors.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="row slack-grid u-margin-b--lrg homepage-article">
+    <div class="columns four offset-by-three offset-by-two--lrg ten--sm offset-by-one--sm homepage-article__image">
+      
+        <img src="images/products/products_3.jpg">
+
+    </div>
+
+    <div class="columns two four--lrg ten--sm offset-by-one--sm">
+
+      <article class="homepage-article__text">
+        <p>Anyone can point a camera and take a picture but good, well lit and composed images taken by a professional photographer and used within your advertising and promotional material, make a strong impression. We aim to give clients images they can be proud of, enabling them to present their business and services with confidence.</p>
+      </article>
+    
+    </div>
+  </div>
+
+  <div class="row u-margin-b--lrg">
+    <div class="columns four offset-by-four six--lrg offset-by-three--lrg eight--med offset-by-two--med ten--sm offset-by-one--sm">
+
+      <article>
+        <p>Creative Edge Photography has a satisfied group of customers including businesses in the manufacturing and service sectors, local councils and schools, restaurants and hotels.</p>
+        <p>Take a look through our website and <a class="primary-link" href="tel:447802987850">give us a call</a> or <a class="primary-link" href="mailto:pauldronsfield@btconnect.com?Subject=Hello%20again">drop us an email</a>. We would love to hear from you.</p>
+      </article>
+      
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="columns twelve">
+      
+      <%- partial('../components/footer.ejs') %>
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,58 @@
+<%
+const header = {
+hasGradient: false,
+hasWhiteBackground: true
+}
+const imagePaths = [
+'images/interiors_and_exteriors/interiors_and_exteriors_1.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_2.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_3.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_4.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_5.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_6.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_7.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_8.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_9.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_10.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_11.jpg',
+'images/interiors_and_exteriors/interiors_and_exteriors_12.jpg'
+]
+%>
+
+<div class="container interiors-and-exteriors-page">
+
+	<div class="row">
+		<div class="columns twelve">
+
+			<%- partial('../components/header.ejs', { header }) %>
+
+		</div>
+	</div>
+
+	<div class="row gallery__page-top u-margin-b--lrg">
+		<div class="columns eight offset-by-two twelve--med offset-by-none--med">
+
+			<div id="gallery" style="display:none;">
+
+				<% imagePaths.forEach(function(imagePath) { %>
+
+					<img alt="Image 1 Title" src="<%= imagePath %>"
+					data-image="<%= imagePath %>"
+					data-description="Image 1 Description">
+
+				<% }) %>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="columns twelve">
+
+			<%- partial('../components/footer.ejs') %>
+
+		</div>
+	</div>
+
+</div>

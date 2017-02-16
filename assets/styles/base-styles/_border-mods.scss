@@ -1,0 +1,323 @@
+//  Contents
+// ––––––––––––––––––––––––––––––––––––––––––––––––
+
+.border-mod--left-slant-centered,
+.border-mod--left-slant-centered--grey,
+.border-mod--bottom-slant-right,
+.border-mod--bottom-slant-right--grey,
+.border-mod--bottom-slant-left,
+.border-mod--bottom-slant-left--grey {
+  overflow: hidden;
+  position: relative;
+}
+
+.border-mod--left-slant-centered::before,
+.border-mod--left-slant-centered--grey::before,
+.border-mod--left-slant-centered::after,
+.border-mod--left-slant-centered--grey::after  {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -5%;
+  height: 110%;
+  padding-left: 10%;
+  transform-origin: center center;
+}
+
+.border-mod--left-slant-centered::before,
+.border-mod--left-slant-centered--grey::before {
+  background-color: $CEPink;
+  transform: translateX(-45%) rotate(-4.8deg);
+}
+
+.border-mod--left-slant-centered::after,
+.border-mod--left-slant-centered--grey::after {
+  transform: translateX(-50%) rotate(4.8deg);
+}
+
+.border-mod--left-slant-centered::after {
+  background-color: $white;
+}
+
+.border-mod--left-slant-centered--grey::after {
+  background-color: $clooney;
+}
+
+.border-mod--bottom-slant-right::before,
+.border-mod--bottom-slant-right--grey::before,
+.border-mod--bottom-slant-right::after,
+.border-mod--bottom-slant-right--grey::after,
+.border-mod--bottom-slant-left::before,
+.border-mod--bottom-slant-left--grey::before,
+.border-mod--bottom-slant-left::after,
+.border-mod--bottom-slant-left--grey::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+  width: 110%;
+  padding-top: 12%;
+  transform-origin: center center;
+}
+
+.border-mod--bottom-slant-right::before,
+.border-mod--bottom-slant-right--grey::before {
+  background-color: $CEPink;
+  transform: translateY(50%) rotate(-4.8deg);
+}
+
+.border-mod--bottom-slant-right::after,
+.border-mod--bottom-slant-right--grey::after {
+  transform: translateY(50%) rotate(4.8deg);
+}
+
+
+.border-mod--bottom-slant-right::after,
+.border-mod--bottom-slant-left::after {
+  background-color: $white;
+}
+
+.border-mod--bottom-slant-right--grey::after,
+.border-mod--bottom-slant-left--grey::after {
+  background-color: $clooney;
+}
+
+.border-mod--bottom-slant-left::before,
+.border-mod--bottom-slant-left--grey::before {
+  background-color: $CEPink;
+  transform: translateY(50%) rotate(4.8deg);
+}
+
+.border-mod--bottom-slant-left::after,
+.border-mod--bottom-slant-left--grey::after {
+  transform: translateY(50%) rotate(-4.8deg);
+}
+
+
+/* border-mod--full-width-bottom-slant-left
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.border-mod--full-width-bottom-slant-left--grey,
+.border-mod--full-width-bottom-slant-left {
+  overflow: hidden;
+  position: relative;
+}
+
+.border-mod--full-width-bottom-slant-left--grey::before,
+.border-mod--full-width-bottom-slant-left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+  width: 110%;
+  padding-top: 6%;
+  transform-origin: center center;
+  background-color: $CEPink;
+  transform: translateY(60%) rotate(2.5deg);
+  z-index: 10;
+}
+
+.border-mod--full-width-bottom-slant-left--grey::after,
+.border-mod--full-width-bottom-slant-left::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+  width: 110%;
+  padding-top: 6%;
+  transform-origin: center center;
+  transform: translateY(60%) rotate(-2.5deg);
+  z-index: 10;
+}
+
+.border-mod--full-width-bottom-slant-left--grey::after {
+  background-color: $clooney;
+}
+
+.border-mod--full-width-bottom-slant-left::after {
+  background-color: $white;
+}
+
+
+/* border-mod--full-width-top-slant-right
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.border-mod--full-width-top-slant-right--grey,
+.border-mod--full-width-top-slant-right {
+  overflow: hidden;
+  position: relative;
+}
+
+.border-mod--full-width-top-slant-right--grey::before,
+.border-mod--full-width-top-slant-right::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  width: 110%;
+  padding-top: 6%;
+  transform-origin: center center;
+  background-color: $CEPink;
+  transform: translateY(-60%) rotate(2.5deg);
+  z-index: 10;
+}
+
+.border-mod--full-width-top-slant-right--grey::after,
+.border-mod--full-width-top-slant-right::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  width: 110%;
+  padding-top: 6%;
+  transform-origin: center center;
+  transform: translateY(-60%) rotate(-2.5deg);
+  z-index: 10;
+}
+
+.border-mod--full-width-top-slant-right--grey::after {
+  background-color: $clooney;
+}
+
+.border-mod--full-width-top-slant-right::after {
+  background-color: $white;
+}
+
+
+/* base--slant-left-border
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.base-slant--left-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.base-slant--left-border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: -1%;
+  width: 102%;
+  padding-top: 20%;
+  background-color: $white;
+  border-top: 5px solid $CEPink;
+  transform: translateY(100%) rotate(-5deg);
+  transform-origin: 0% top;
+  z-index: 20;
+}
+
+
+/* base--slant-right-border
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.base-slant--right-border {
+  position: relative;
+  overflow: hidden;
+}
+
+.base-slant--right-border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: -1%;
+  width: 102%;
+  padding-top: 20%;
+  background-color: $white;
+  border-top: 5px solid $CEPink;
+  transform: translateY(100%) rotate(5deg);
+  transform-origin: 100% top;
+  z-index: 20;
+}
+
+
+/* base--slant-left-border-red
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.base-slant--left-border-red {
+  position: relative;
+  overflow: hidden;
+}
+
+.base-slant--left-border-red::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: -1%;
+  width: 102%;
+  padding-top: 20%;
+  background-color: $white;
+  border-top: 5px solid $tractorRed;
+  transform: translateY(100%) rotate(-5deg);
+  transform-origin: 0% top;
+  z-index: 20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SVG Bases
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.basesvg-grey-small::after {
+  content: "";
+  display: block;
+  width: 102%;
+  position: absolute;
+  bottom: -0;
+  left: -1%;
+  padding-bottom: 10.4%;
+  background-image: url('../../images/div_tabs/below/base-grey-small.svg');
+  background-repeat: no-repeat;
+}
+
+.basesvg-white-small::after {
+  content: "";
+  display: block;
+  width: 102%;
+  position: absolute;
+  bottom: -0;
+  left: -1%;
+  padding-bottom: 10.4%;
+  background-image: url('../../images/div_tabs/below/base-white-small.svg');
+  background-repeat: no-repeat;
+}
+
+.topsvg-grey-small::before {
+  content: "";
+  display: block;
+  width: 102%;
+  position: absolute;
+  top: -28.7%;
+  left: -1%;
+  padding-bottom: 10.4%;
+  background-image: url('../../images/div_tabs/above/white-top/base-white-small.svg');
+  background-repeat: no-repeat;
+  z-index: 30;
+}
+
+.basesvg-left-tick::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  width: 100%;
+  padding-bottom: 4.36606404348835%;
+  background-image: url(../../images/div_tabs/greentriheader.svg);
+  background-repeat: no-repeat;
+  z-index: 20;
+}

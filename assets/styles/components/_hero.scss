@@ -1,0 +1,20 @@
+.hero {
+	position: relative;
+	padding-top: 44.271%;
+}
+
+.hero__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero__slide.active { opacity: 1; }

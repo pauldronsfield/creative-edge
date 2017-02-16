@@ -1,0 +1,12 @@
+@media screen and (max-width: 730px) {
+	.homepage-article {
+		margin-bottom: 0;
+	}
+	.homepage-article__image,
+	.homepage-article__text {
+		padding: 0 15px;
+	}
+	.homepage-article__text p {
+		-webkit-margin-after: 0;
+	}
+}

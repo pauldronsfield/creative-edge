@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creative Edge Photography</title>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/dependencies/unite-gallery.css">
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+
+  </head>
+
+  <body>
+
+    <div class="content-container">
+
+      <%- body %>
+
+    </div>
+
+    <!--TEMPLATES-->
+    
+    <!--TEMPLATES END-->
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/jquery.min.js"></script>
+    <script src="/js/dependencies/unitegallery.min.js"></script>
+    <script src="/js/dependencies/zug-theme-default.js"></script>
+    <script src="/js/dependencies/zug-theme-tiles.js"></script>
+    <script src="/js/footerCtrl.js"></script>
+    <script src="/js/headerCtrl.js"></script>
+    <script src="/js/heroCtrl.js"></script>
+    <script src="/js/parallax.js"></script>
+    <!--SCRIPTS END-->
+
+    <script type="text/javascript"> 
+      
+      jQuery(document).ready(function(){ 
+        jQuery('#gallery').unitegallery({
+          gallery_theme: 'tiles',
+          tile_enable_textpanel: true,
+          lightbox_textpanel_title_color: '292929',
+        }); 
+      }); 
+    
+    </script>
+  
+  </body>
+</html>

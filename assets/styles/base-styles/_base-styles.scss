@@ -1,0 +1,108 @@
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html { font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.375;
+  color: #292929;
+  background-color: $darkGrey;
+}
+
+.content-container {
+  background-color: $white;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+ol {
+  padding-left: 25px;
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+svg {
+  display: block;
+}
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th, td {
+  padding: 1.2rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+pre,
+blockquote {
+  margin-bottom: 2.5rem; }
+
+figure { margin: 0; }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: none;
+}
+
+
+/* Clearfix
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+

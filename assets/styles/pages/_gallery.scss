@@ -1,0 +1,26 @@
+.gallery__page-top {
+  margin-top: 153px;
+}
+
+.gallery__item {
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	user-select: none;
+}
+
+.gallery__image { transition: transform $transitionSpeed ease-in-out; }
+
+.gallery__image:hover { transform: scale(1.1); }
+
+.interiors-and-exteriors-page .header__link:first-child,
+.products-page .header__link:nth-child(2),
+.locations-page .header__link:nth-child(3),
+.business-portraits-page .header__link:nth-child(4),
+.pr-and-editorial-page .header__link:nth-child(5),
+.people-page .header__link:nth-child(6),
+.properties-page .header__link:last-child { color: $CEPink !important }
+
+@media only screen and (max-width: 550px) {
+	.gallery__page-top { margin-top: 120px; }
+}

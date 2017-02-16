@@ -1,0 +1,58 @@
+<%
+const header = {
+  hasGradient: false,
+  hasWhiteBackground: true
+}
+const imagePaths = [
+	'images/locations/locations_1.jpg',
+	'images/locations/locations_2.jpg',
+	'images/locations/locations_3.jpg',
+	'images/locations/locations_4.jpg',
+	'images/locations/locations_5.jpg',
+	'images/locations/locations_6.jpg',
+	'images/locations/locations_7.jpg',
+	'images/locations/locations_8.jpg',
+	'images/locations/locations_9.jpg',
+	'images/locations/locations_10.jpg',
+	'images/locations/locations_11.jpg',
+	'images/locations/locations_12.jpg'
+]
+%>
+
+<div class="container locations-page">
+
+  <div class="row">
+    <div class="columns twelve">
+      
+      <%- partial('../components/header.ejs', { header }) %>
+
+		</div>
+	</div>
+
+	<div class="row gallery__page-top u-margin-b--lrg">
+		<div class="columns eight offset-by-two twelve--med offset-by-none--med">
+
+			<div id="gallery" style="display:none;">
+
+				<% imagePaths.forEach(function(imagePath) { %>
+
+					<img alt="Image 1 Title" src="<%= imagePath %>"
+					data-image="<%= imagePath %>"
+					data-description="Image 1 Description">
+
+				<% }) %>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+	    <div class="columns twelve">
+	      
+	      <%- partial('../components/footer.ejs') %>
+
+	    </div>
+	  </div>
+
+</div>

@@ -1,0 +1,44 @@
+
+/* Flags
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.flag {
+  background-image: url("../../images/sprite.png");
+  background-size: 480px;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+}
+
+.flag--rounded {
+  border-radius: 20px;
+  width: 20px;
+}
+
+.flag--rounded.flag--uk { background-position: -5px 0; }
+.flag--rounded.flag--ireland { background-position: -5px -40px; }
+.flag--rounded.flag--denmark { background-position: -5px -80px; }
+.flag--rounded.flag--germany { background-position: -5px -120px; }
+.flag--rounded.flag--netherlands { background-position: -5px -160px; }
+.flag--rounded.flag--italy { background-position: -5px -200px; }
+.flag--rounded.flag--portugal { background-position: -5px -240px; }
+.flag--rounded.flag--spain { background-position: -5px -280px; }
+.flag--rounded.flag--france { background-position: -5px -320px; }
+.flag--rounded.flag--poland { background-position: -5px -360px; }
+.flag--rounded.flag--austria { background-position: -5px -400px; }
+.flag--rounded.flag--belgium { background-position: -5px -440px; }
+.flag--rounded.flag--sweden { background-position: -65px -440px; }
+
+.flag--bulkpowders_store { @extend .flag; background-position: 0 0; }
+.flag--ireland { @extend .flag; background-position: 0 -40px; }
+.flag--denmark { @extend .flag; background-position: 0 -80px; }
+.flag--germany { @extend .flag; background-position: 0 -120px; }
+.flag--netherlands { @extend .flag; background-position: 0 -160px; }
+.flag--italy { @extend .flag; background-position: 0 -200px; }
+.flag--portugal { @extend .flag; background-position: 0 -240px; }
+.flag--spain { @extend .flag; background-position: 0 -280px; }
+.flag--france { @extend .flag; background-position: 0 -320px; }
+.flag--poland { @extend .flag; background-position: 0px -360px; }
+.flag--austria { @extend .flag; background-position: 0px -400px; }
+.flag--belgium { @extend .flag; background-position: 0px -440px; }
+.flag--sweden { @extend .flag; background-position: -60px -440px; }

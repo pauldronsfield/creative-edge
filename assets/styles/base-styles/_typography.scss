@@ -1,0 +1,50 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 0.33;
+  line-height: 1;
+}
+
+h1 { font-size: 4.8rem; }
+h2 { font-size: 4rem; margin-bottom: 3rem; }
+h3 { font-size: 3.1rem; margin-bottom: 3.5rem; }
+h4 { font-size: 2.5rem; margin-bottom: 2.5rem; }
+h5 { font-size: 2rem; margin-bottom: 0.5rem; }
+h6 { font-size: 1.6rem; }
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #666C68;
+  //Above line-height is against formal style rules, but seems to reflect style guide better, eg: reveal yourself page.
+  // -webkit-margin-before: 0;
+  // -webkit-margin-after: 0;
+}
+
+// p:last-child { margin-bottom: 0; }
+
+.verveine {
+  font-family: verveine;
+  // color: inherit;
+  // line-height: 1;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.verveine h1,
+.verveine h2,
+.verveine h3,
+.verveine h4,
+.verveine h5,
+.verveine h6 { font-weight: 400; }
+
+.inspirational {
+  font-family: verveine;
+  line-height: 1.2;
+  font-size: 9rem;
+  text-transform: uppercase;
+}
