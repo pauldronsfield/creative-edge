@@ -3,19 +3,67 @@ const header = {
   hasGradient: false,
   hasWhiteBackground: true
 }
-const imagePaths = [
-	'images/products/products_1.jpg',
-	'images/products/products_2.jpg',
-	'images/products/products_3.jpg',
-	'images/products/products_4.jpg',
-	'images/products/products_5.jpg',
-	'images/products/products_6.jpg',
-	'images/products/products_7.jpg',
-	'images/products/products_8.jpg',
-	'images/products/products_9.jpg',
-	'images/products/products_10.jpg',
-	'images/products/products_11.jpg',
-	'images/products/products_12.jpg'
+const images = [
+	{
+		fullSize: 'images/products/full-size/products_1.jpg',
+		thumbnail: 'images/products/thumbnails/products_1.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_2.jpg',
+		thumbnail: 'images/products/thumbnails/products_2.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_3.jpg',
+		thumbnail: 'images/products/thumbnails/products_3.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_4.jpg',
+		thumbnail: 'images/products/thumbnails/products_4.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_5.jpg',
+		thumbnail: 'images/products/thumbnails/products_5.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_6.jpg',
+		thumbnail: 'images/products/thumbnails/products_6.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_7.jpg',
+		thumbnail: 'images/products/thumbnails/products_7.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_8.jpg',
+		thumbnail: 'images/products/thumbnails/products_8.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_9.jpg',
+		thumbnail: 'images/products/thumbnails/products_9.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_10.jpg',
+		thumbnail: 'images/products/thumbnails/products_10.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_11.jpg',
+		thumbnail: 'images/products/thumbnails/products_11.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/products/full-size/products_12.jpg',
+		thumbnail: 'images/products/thumbnails/products_12.jpg',
+		alt: 'Descriptive text'
+	}
 ]
 %>
 
@@ -34,10 +82,15 @@ const imagePaths = [
 
 			<div id="gallery" style="display:none;">
 
-				<% imagePaths.forEach(function(imagePath) { %>
+				<% images.forEach(function(image) { %>
+					<%
+					const fullSize = image.fullSize
+					const thumbnail = image.thumbnail
+					const alt = image.alt
+					%>
 
-					<img alt="Image 1 Title" src="<%= imagePath %>"
-					data-image="<%= imagePath %>"
+					<img alt="<%= alt %>" src="<%= thumbnail %>"
+					data-image="<%= fullSize %>"
 					data-description="Image 1 Description">
 
 				<% }) %>

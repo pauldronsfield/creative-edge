@@ -3,19 +3,67 @@ const header = {
 hasGradient: false,
 hasWhiteBackground: true
 }
-const imagePaths = [
-'images/interiors_and_exteriors/interiors_and_exteriors_1.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_2.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_3.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_4.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_5.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_6.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_7.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_8.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_9.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_10.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_11.jpg',
-'images/interiors_and_exteriors/interiors_and_exteriors_12.jpg'
+const images = [
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_1.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_1.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_2.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_2.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_3.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_3.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_4.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_4.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_5.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_5.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_6.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_6.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_7.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_7.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_8.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_8.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_9.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_9.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_10.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_10.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_11.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_11.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/interiors_and_exteriors/full-size/interiors_and_exteriors_12.jpg',
+		thumbnail: 'images/interiors_and_exteriors/thumbnails/interiors_and_exteriors_12.jpg',
+		alt: 'Descriptive text'
+	}
 ]
 %>
 
@@ -34,10 +82,15 @@ const imagePaths = [
 
 			<div id="gallery" style="display:none;">
 
-				<% imagePaths.forEach(function(imagePath) { %>
+				<% images.forEach(function(image) { %>
+					<%
+					const fullSize = image.fullSize
+					const thumbnail = image.thumbnail
+					const alt = image.alt
+					%>
 
-					<img alt="Image 1 Title" src="<%= imagePath %>"
-					data-image="<%= imagePath %>"
+					<img alt="<%= alt %>" src="<%= thumbnail %>"
+					data-image="<%= fullSize %>"
 					data-description="Image 1 Description">
 
 				<% }) %>

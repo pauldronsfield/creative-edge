@@ -3,19 +3,67 @@ const header = {
   hasGradient: false,
   hasWhiteBackground: true
 }
-const imagePaths = [
-	'images/pr_and_editorial/pr_and_editorial_1.jpg',
-	'images/pr_and_editorial/pr_and_editorial_2.jpg',
-	'images/pr_and_editorial/pr_and_editorial_3.jpg',
-	'images/pr_and_editorial/pr_and_editorial_4.jpg',
-	'images/pr_and_editorial/pr_and_editorial_5.jpg',
-	'images/pr_and_editorial/pr_and_editorial_6.jpg',
-	'images/pr_and_editorial/pr_and_editorial_7.jpg',
-	'images/pr_and_editorial/pr_and_editorial_8.jpg',
-	'images/pr_and_editorial/pr_and_editorial_9.jpg',
-	'images/pr_and_editorial/pr_and_editorial_10.jpg',
-	'images/pr_and_editorial/pr_and_editorial_11.jpg',
-	'images/pr_and_editorial/pr_and_editorial_12.jpg'
+const images = [
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_1.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_1.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_2.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_2.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_3.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_3.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_4.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_4.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_5.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_5.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_6.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_6.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_7.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_7.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_8.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_8.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_9.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_9.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_10.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_10.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_11.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_11.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/pr_and_editorial/full-size/pr_and_editorial_12.jpg',
+		thumbnail: 'images/pr_and_editorial/thumbnails/pr_and_editorial_12.jpg',
+		alt: 'Descriptive text'
+	}
 ]
 %>
 
@@ -34,10 +82,15 @@ const imagePaths = [
 
 			<div id="gallery" style="display:none;">
 
-				<% imagePaths.forEach(function(imagePath) { %>
+				<% images.forEach(function(image) { %>
+					<%
+					const fullSize = image.fullSize
+					const thumbnail = image.thumbnail
+					const alt = image.alt
+					%>
 
-					<img alt="Image 1 Title" src="<%= imagePath %>"
-					data-image="<%= imagePath %>"
+					<img alt="<%= alt %>" src="<%= thumbnail %>"
+					data-image="<%= fullSize %>"
 					data-description="Image 1 Description">
 
 				<% }) %>
@@ -46,7 +99,6 @@ const imagePaths = [
 
 		</div>
 	</div>
-
 	<div class="row">
 	    <div class="columns twelve">
 	      

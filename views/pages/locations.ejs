@@ -3,19 +3,67 @@ const header = {
   hasGradient: false,
   hasWhiteBackground: true
 }
-const imagePaths = [
-	'images/locations/locations_1.jpg',
-	'images/locations/locations_2.jpg',
-	'images/locations/locations_3.jpg',
-	'images/locations/locations_4.jpg',
-	'images/locations/locations_5.jpg',
-	'images/locations/locations_6.jpg',
-	'images/locations/locations_7.jpg',
-	'images/locations/locations_8.jpg',
-	'images/locations/locations_9.jpg',
-	'images/locations/locations_10.jpg',
-	'images/locations/locations_11.jpg',
-	'images/locations/locations_12.jpg'
+const images = [
+	{
+		fullSize: 'images/locations/full-size/locations_1.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_1.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_2.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_2.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_3.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_3.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_4.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_4.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_5.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_5.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_6.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_6.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_7.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_7.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_8.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_8.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_9.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_9.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_10.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_10.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_11.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_11.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/locations/full-size/locations_12.jpg',
+		thumbnail: 'images/locations/thumbnails/locations_12.jpg',
+		alt: 'Descriptive text'
+	}
 ]
 %>
 
@@ -34,10 +82,15 @@ const imagePaths = [
 
 			<div id="gallery" style="display:none;">
 
-				<% imagePaths.forEach(function(imagePath) { %>
+				<% images.forEach(function(image) { %>
+					<%
+					const fullSize = image.fullSize
+					const thumbnail = image.thumbnail
+					const alt = image.alt
+					%>
 
-					<img alt="Image 1 Title" src="<%= imagePath %>"
-					data-image="<%= imagePath %>"
+					<img alt="<%= alt %>" src="<%= thumbnail %>"
+					data-image="<%= fullSize %>"
 					data-description="Image 1 Description">
 
 				<% }) %>

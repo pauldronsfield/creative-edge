@@ -1,6 +1,4 @@
-.gallery__page-top {
-  margin-top: 153px;
-}
+.gallery__page-top { margin-top: 153px; }
 
 .gallery__item {
 	cursor: pointer;
@@ -13,14 +11,23 @@
 
 .gallery__image:hover { transform: scale(1.1); }
 
-.interiors-and-exteriors-page .header__link:first-child,
-.products-page .header__link:nth-child(2),
-.locations-page .header__link:nth-child(3),
-.business-portraits-page .header__link:nth-child(4),
-.pr-and-editorial-page .header__link:nth-child(5),
-.people-page .header__link:nth-child(6),
-.properties-page .header__link:last-child { color: $CEPink !important }
+.property-page .header__nav-first-list li:first-child,
+.products-page .header__nav-first-list li:nth-child(2),
+.locations-page .header__nav-first-list li:nth-child(3),
+.pr-and-editorial-page .header__nav-first-list li:last-child,
+.business-portraits-page .header__nav-second-list li:first-child,
+.people-page .header__nav-second-list li:nth-child(2),
+.interiors-and-exteriors-page .header__nav-second-list li:last-child { color: $CEPink !important }
+
+// .interiors-and-exteriors-page .header__link:first-child,
+// .products-page .header__link:nth-child(2),
+// .locations-page .header__link:nth-child(3),
+// .business-portraits-page .header__link:nth-child(4),
+// .pr-and-editorial-page .header__link:nth-child(5),
+// .people-page .header__link:nth-child(6),
+// .properties-page .header__link:last-child { color: $CEPink !important }
 
 @media only screen and (max-width: 550px) {
-	.gallery__page-top { margin-top: 120px; }
+	.gallery__page-top { margin-top: 123px; }
 }
+

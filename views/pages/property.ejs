@@ -1,0 +1,110 @@
+<%
+const header = {
+  hasGradient: false,
+  hasWhiteBackground: true
+}
+const images = [
+	{
+		fullSize: 'images/property/full-size/property_1.jpg',
+		thumbnail: 'images/property/thumbnails/property_1.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_2.jpg',
+		thumbnail: 'images/property/thumbnails/property_2.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_3.jpg',
+		thumbnail: 'images/property/thumbnails/property_3.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_4.jpg',
+		thumbnail: 'images/property/thumbnails/property_4.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_5.jpg',
+		thumbnail: 'images/property/thumbnails/property_5.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_6.jpg',
+		thumbnail: 'images/property/thumbnails/property_6.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_7.jpg',
+		thumbnail: 'images/property/thumbnails/property_7.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_8.jpg',
+		thumbnail: 'images/property/thumbnails/property_8.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_9.jpg',
+		thumbnail: 'images/property/thumbnails/property_9.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_10.jpg',
+		thumbnail: 'images/property/thumbnails/property_10.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_11.jpg',
+		thumbnail: 'images/property/thumbnails/property_11.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/property/full-size/property_12.jpg',
+		thumbnail: 'images/property/thumbnails/property_12.jpg',
+		alt: 'Descriptive text'
+	}
+]
+%>
+
+<div class="container property-page">
+
+  <div class="row">
+    <div class="columns twelve">
+      
+      <%- partial('../components/header.ejs', { header }) %>
+
+		</div>
+	</div>
+
+	<div class="row gallery__page-top u-margin-b--lrg">
+		<div class="columns eight offset-by-two twelve--med offset-by-none--med">
+
+			<div id="gallery" style="display:none;">
+
+				<% images.forEach(function(image) { %>
+					<%
+					const fullSize = image.fullSize
+					const thumbnail = image.thumbnail
+					const alt = image.alt
+					%>
+
+					<img alt="<%= alt %>" src="<%= thumbnail %>"
+					data-image="<%= fullSize %>"
+					data-description="Image 1 Description">
+
+				<% }) %>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="row">
+	    <div class="columns twelve">
+	      
+	      <%- partial('../components/footer.ejs') %>
+
+	    </div>
+	  </div>
+
+</div>

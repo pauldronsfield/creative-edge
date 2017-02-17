@@ -6,6 +6,10 @@
 	.homepage-article__text {
 		padding: 0 15px;
 	}
+	.homepage-article__text-holder {
+		position: static;
+		transform: none;
+	}
 	.homepage-article__text p {
 		-webkit-margin-after: 0;
 	}

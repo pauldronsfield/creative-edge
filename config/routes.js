@@ -69,8 +69,8 @@ module.exports.routes = {
       layout: 'gallery'
     }
   },
-  '/properties': {
-    view: 'pages/properties',
+  '/property': {
+    view: 'pages/property',
     locals: {
       layout: 'gallery'
     }
