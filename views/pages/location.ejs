@@ -1,0 +1,112 @@
+<%
+const header = {
+	hasGradient: false,
+	hasWhiteBackground: true,
+	hasShadow: true
+}
+const images = [
+	{
+		fullSize: 'images/location/full-size/location_1.jpg',
+		thumbnail: 'images/location/thumbnails/location_1.jpg',
+		alt: 'Research &amp; design facility for publishing house'
+	},
+	{
+		fullSize: 'images/location/full-size/location_2.jpg',
+		thumbnail: 'images/location/thumbnails/location_2.jpg',
+		alt: 'Carl Zeiss for website'
+	},
+	{
+		fullSize: 'images/location/full-size/location_3.jpg',
+		thumbnail: 'images/location/thumbnails/location_3.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/location/full-size/location_4.jpg',
+		thumbnail: 'images/location/thumbnails/location_4.jpg',
+		alt: 'Engineering research facility for publishing house'
+	},
+	{
+		fullSize: 'images/location/full-size/location_5.jpg',
+		thumbnail: 'images/location/thumbnails/location_5.jpg',
+		alt: 'Coca Cola, Edmonton for magazine editorial'
+	},
+	{
+		fullSize: 'images/location/full-size/location_6.jpg',
+		thumbnail: 'images/location/thumbnails/location_6.jpg',
+		alt: 'Coca Cola bottling plant for magazine editorial'
+	},
+	{
+		fullSize: 'images/location/full-size/location_7.jpg',
+		thumbnail: 'images/location/thumbnails/location_7.jpg',
+		alt: 'Electronics company website'
+	},
+	{
+		fullSize: 'images/location/full-size/location_8.jpg',
+		thumbnail: 'images/location/thumbnails/location_8.jpg',
+		alt: 'Electronics company quality control for magazine editorial'
+	},
+	{
+		fullSize: 'images/location/full-size/location_9.jpg',
+		thumbnail: 'images/location/thumbnails/location_9.jpg',
+		alt: 'Electronics company design &amp; research for magazine publisher'
+	},
+	{
+		fullSize: 'images/location/full-size/location_10.jpg',
+		thumbnail: 'images/location/thumbnails/location_10.jpg',
+		alt: 'Herts cable company for website'
+	},
+	{
+		fullSize: 'images/location/full-size/location_11.jpg',
+		thumbnail: 'images/location/thumbnails/location_11.jpg',
+		alt: 'Descriptive text'
+	},
+	{
+		fullSize: 'images/location/full-size/location_12.jpg',
+		thumbnail: 'images/location/thumbnails/location_12.jpg',
+		alt: 'CCTV security centre, Bull Ring, Birmingham for security company'
+	}
+]
+%>
+
+<div class="container locations-page">
+
+  <div class="row">
+    <div class="columns twelve">
+      
+      <%- partial('../components/header.ejs', { header }) %>
+
+		</div>
+	</div>
+
+	<div class="row gallery__container">
+		<div class="columns eight offset-by-two twelve--med offset-by-none--med">
+
+			<div id="gallery" style="display:none;">
+
+				<% images.forEach(function(image) { %>
+					<%
+					const fullSize = image.fullSize
+					const thumbnail = image.thumbnail
+					const alt = image.alt
+					%>
+
+					<img alt="<%= alt %>" src="<%= thumbnail %>"
+					data-image="<%= fullSize %>"
+					data-description="Image 1 Description">
+
+				<% }) %>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+	    <div class="columns twelve">
+	      
+	      <%- partial('../components/footer.ejs') %>
+
+	    </div>
+	  </div>
+
+</div>

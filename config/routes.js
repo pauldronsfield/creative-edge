@@ -51,8 +51,8 @@ module.exports.routes = {
       layout: 'gallery'
     }
   },
-  '/locations': {
-    view: 'pages/locations',
+  '/location': {
+    view: 'pages/location',
     locals: {
       layout: 'gallery'
     }

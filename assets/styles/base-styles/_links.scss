@@ -16,24 +16,15 @@ a {
 
 .primary-link:hover,
 .secondary-link:hover,
-.tertiary-link:hover,
-.primary-link:visited,
-.secondary-link:visited,
-.tertiary-link:visited  {
+.tertiary-link:hover {
   border-bottom: 2px solid transparent;
 }
 
 .primary-link { color: #292929; border-bottom: 2px solid $CEPink; margin-bottom: -2px; }
 .primary-link:hover { color: $CEPink; }
-.primary-link:active,
-.primary-link:visited { color: #36A304; }
 
 .secondary-link { color: #fff; }
 .secondary-link:hover { color: $CEPink; }
-.secondary-link:active,
-.secondary-link:visited { color: $CEPink; }
 
 .tertiary-link { color: $CEPink; }
 .tertiary-link:hover { color: #292929; }
-.tertiary-link:active,
-.tertiary-link:visited { color: #666C68; }
